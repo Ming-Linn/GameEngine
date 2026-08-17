@@ -20,6 +20,8 @@ int main() {
 		return -1;
 	}
 
+	glfwSetWindowPos(window, 1000, 150);
+
 	while (!glfwWindowShouldClose(window))
 	{
 			glfwPollEvents();
