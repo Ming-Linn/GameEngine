@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\All_Lib\glfw-3.5.1.bin.WIN64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\All_Lib\glfw-3.5.1.bin.WIN64\lib-vc2026;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\All_Lib\glew-2.3.1\include;D:\All_Lib\glfw-3.5.1.bin.WIN64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\All_Lib\glew-2.3.1\lib\Release\x64;D:\All_Lib\glfw-3.5.1.bin.WIN64\lib-vc2026;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -110,7 +110,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
